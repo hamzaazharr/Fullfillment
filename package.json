@@ -15,6 +15,7 @@
     "vuetify": "^2.6.4"
   },
   "devDependencies": {
-    "terser": "^3.14.1"
+    "terser": "^3.14.1",
+    "terser-webpack-plugin": "^5.3.10"
   }
 }
