@@ -7,7 +7,7 @@ import { BootstrapVue} from 'bootstrap-vue'
 // Import Bootstrap an BootstrapVue CSS files (order is important)
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
-// import './assets/style.css'
+import './assets/style.css'
 import firebase from 'firebase/compat/app';
 import 'firebase/compat/firestore';
 import 'firebase/compat/auth';
@@ -24,12 +24,13 @@ export default function (Vue, {appOptions, router, head, isClient }) {
   //   href: 'https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900',
   // });
   
-  const opts = {} 
+  const opts = {} //opts includes, vuetify themes, icons, etc.
   Vue.use(Vuetify)
   
   appOptions.vuetify = new Vuetify(opts);
   Vue.component('Layout', DefaultLayout)
   Vue.use(BootstrapVue)
+ 
   
 }
 const app = firebase.initializeApp({
