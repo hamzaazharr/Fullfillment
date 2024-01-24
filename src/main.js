@@ -24,13 +24,12 @@ export default function (Vue, {appOptions, router, head, isClient }) {
   //   href: 'https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900',
   // });
   
-  const opts = {} //opts includes, vuetify themes, icons, etc.
+  const opts = {} 
   Vue.use(Vuetify)
   
   appOptions.vuetify = new Vuetify(opts);
   Vue.component('Layout', DefaultLayout)
   Vue.use(BootstrapVue)
- 
   
 }
 const app = firebase.initializeApp({
